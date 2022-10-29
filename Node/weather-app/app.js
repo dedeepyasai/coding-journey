@@ -7,6 +7,11 @@ request({url: url, json: true},(error,response)=>{
     console.log(data.current);
 })
 
-var x = [10,20,30,40];
-x=[30];
-console.log(x);
+const listlocations = (locations) =>{
+    locations.forEach((location)=>{
+        console.log(location);
+    })
+}
+const myLocations = ['Las Vegas', 'New York', 'Dallas']
+
+listlocations(myLocations);

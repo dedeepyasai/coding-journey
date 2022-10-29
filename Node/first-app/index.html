@@ -10,5 +10,34 @@
         <input type="text" placeholder="quote" name="quote">
         <button type="submit">Submit</button>
       </form>
+
+
+      <script>
+
+        function Employee(){
+            this.name =""
+            this.DoWork= function(){
+                console.log("Employee working");
+            }
+            this.Attendance = function(){
+                console.log("Attendance needed");
+            }
+        }
+        function Manager(){
+            this.Cabin = ""
+            this.DoWork = function(){
+                console.log("Make employees work");
+            }
+
+        }
+        var emp = new Employee();
+        Manager.prototype = emp;
+        var man = new Manager();
+        man.name ="Sai";
+        man.DoWork();
+        man.Attendance();
+
+    
+        </script>  
 </body>
 </html>
